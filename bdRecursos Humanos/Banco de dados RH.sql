@@ -11,7 +11,7 @@ CREATE TABLE tbFuncionario(
 	idFuncionario INT PRIMARY KEY IDENTITY(1,1)
 	, nomeFuncionario VARCHAR(50) NOT NULL
 	, cpfFuncionario CHAR(14) NOT NULL
-	, rgFuncionario VARCHAR(14) NOT NULL
+	, rgFuncionario VARCHAR(25) NOT NULL
 	, dtNasctoFuncionario SMALLDATETIME NOT NULL
 	, salarioFuncionario SMALLMONEY NOT NULL
 	, idDepto INT FOREIGN KEY REFERENCES tbDepto(idDepto)
